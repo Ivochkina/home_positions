@@ -18,6 +18,7 @@ header {
     background-color: #3f0002;
     padding-top: 21px;
 
+
 }
 
 .pizza-logo img {
@@ -111,8 +112,49 @@ header {
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
-    /*margin-top: 50px;*/
     padding-bottom: 125px;
+}
+.social{
+    position: fixed;
+    right: 0;
+    top: 224px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+
+.social a{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    background-color: #98161b;
+    color: #ffffff;
+    font-size: 34px;
+    text-decoration: none;
+
+
+}
+.social a:last-child:before{
+     content:"\f099";
+     font-family: 'Font Awesome 5 Brands';
+
+
+ }
+.social a:first-child:before{
+    content:"\f39e";
+    font-family: 'Font Awesome 5 Brands';
+
+
+}
+.social a:hover{
+    background-color: #850409;
+    color: #000000;
 }
 
 footer{
