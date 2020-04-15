@@ -1,30 +1,68 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header {
-    height: 40px;
-    background-color: #af2024;
+.social {
+    position: fixed;
+    right: 0;
+    top: 224px;
+    z-index: 1;
+
 
 }
 
+
+
+.social a {
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    background-color: #98161b;
+    color: #ffffff;
+    font-size: 34px;
+    text-decoration: none;
+
+
+}
+.social  a:first-child:after {
+    content: "\f39e";
+    font-family: 'Font Awesome 5 Brands';
+
+
+}
+
+.social  a:last-child:after {
+    content: "\f099";
+    font-family: 'Font Awesome 5 Brands';
+
+
+}
+
+
+
+.social a:hover {
+    background-color: #850409;
+    color: #000000;
+}
+
 .pizza {
+    border-top: #af2024 solid 40px;
     background-image: url("../images/pizza.jpg");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-size: 100% auto;
     background-color: #3f0002;
     padding-top: 21px;
-
+    position: relative;
 
 }
 
 .pizza-logo img {
     display: block;
     max-width: 100%;
-    height: auto;
 }
 
 .pizza-wrap {
@@ -33,14 +71,17 @@ header {
 
 }
 
-.pizza-wrap_video {
+.pizza-video {
     max-width: 710px;
     margin: auto;
-    background-color: white;
+    background-color: #ffffff;
+    position: relative;
+    top: 40px;
+    padding-bottom: 125px;
 }
 
 
-.video-title {
+.pizza-video_title {
     background-color: #98161b;
     padding: 28px 0 27px 18px;
     color: #ffffff;
@@ -82,82 +123,44 @@ header {
     margin: auto;
 }
 
-.pizza-wrap_video h4 {
+.pizza-video h4 {
     font-family: 'Arvo', serif;
     color: #98161b;
-    font-family: Arvo;
     font-size: 13px;
     font-weight: 700;
     line-height: 16px;
-    margin-top: 28px;
-    margin-bottom: 27px;
+    margin-top: 29px;
 
 
 }
 
-.pizza-wrap_video span {
+.pizza-video span {
     font-family: 'Arvo', serif;
     color: #7d7d7d;
-    font-family: Arvo;
     font-size: 13px;
     line-height: 16px;
 }
 
 
-
-.pizza-wrap_video p {
+.pizza-video p {
     font-family: 'Arvo', serif;
     color: #98161b;
-    font-family: Arvo;
     font-size: 13px;
     font-weight: 400;
-    line-height: 18px;
-    padding-bottom: 125px;
-}
-.social{
-    position: fixed;
-    right: 0;
-    top: 224px;
-    display: flex;
-    flex-direction: column;
-
+    line-height: 25px;
+    margin-top: 20px;
 }
 
-
-
-
-
-.social a{
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    text-align: center;
-    line-height: 50px;
-    background-color: #98161b;
-    color: #ffffff;
-    font-size: 34px;
-    text-decoration: none;
-
-
-}
-.social a:last-child:before{
-     content:"\f099";
-     font-family: 'Font Awesome 5 Brands';
-
-
- }
-.social a:first-child:before{
-    content:"\f39e";
-    font-family: 'Font Awesome 5 Brands';
-
-
-}
-.social a:hover{
-    background-color: #850409;
-    color: #000000;
+.pizza-video h4:after {
+    display: block;
+    content: ".........";
+    margin-top: 20px;
+    letter-spacing: 2px;
 }
 
-footer{
+
+
+footer {
     background-color: #000000;
     height: 454px;
 }
